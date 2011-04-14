@@ -3,7 +3,13 @@
 #umask 022
 
 export LS_OPTIONS='--color=auto'
-eval "`dircolors`"
+
+if [ `uname -o` == "GNU/Linux"]; then
+  eval "`dircolors`"
+
+  #enable bash completion
+  . /etc/bash_completion
+fi
 
 # ALIASES
 
@@ -21,9 +27,6 @@ if [ `hostname` == "dbbeee" ]; then
   alias start_redshift='redshift  -v -l 48.208957:16.374035'
 fi
 
-
-#enable bash completion
-. /etc/bash_completion
 
 #enable git and some other stuff.
 export PS1='\[\033[01;32m\]\u\[\033[01;34m\] \w\[\033[31m\]$(__git_ps1 " (%s)")\[\033[01;34m\]$\[\033[00m\] '
