@@ -1,0 +1,13 @@
+# set colors to light gray on light blue
+sorendition 10 74
+
+# set a sophisticated status bar / caption line
+caption always '%?%F%{!b}%?%H%?%F%{-}%?%?|%{+b r}%h%{-}%?|%0L=%-Lw%{!b}%50L>%n*%f %t%{-}%+Lw%-12=|%?%F%{!b}%?%m-%d %0c%?%F%{-}%?'
+
+#enable zombie mode
+zombie cr
+
+#disable startup message
+startup_message off
+
+
