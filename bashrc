@@ -4,7 +4,7 @@
 
 export LS_OPTIONS='--color=auto'
 
-if [ `uname -o` == "GNU/Linux"]; then
+if [ `uname -s` == "Linux" ]; then
   eval "`dircolors`"
 
   #enable bash completion
