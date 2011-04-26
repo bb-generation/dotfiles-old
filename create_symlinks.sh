@@ -1,8 +1,7 @@
 #!/bin/bash
 
-cd
-
-ln -s bashrc ~/.bashrc
-ln -s screenrc ~/.screenrc
-ln -s vimrc ~/.vimrc
+ln -s `pwd`/bashrc ~/.bashrc
+ln -s `pwd`/screenrc ~/.screenrc
+ln -s `pwd`/vimrc ~/.vimrc
+ln -s `pwd`/gitconfig ~/.gitconfig
 
