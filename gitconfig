@@ -1,0 +1,17 @@
+# vim:set filetype=gitconfig:
+[user]
+	name = Bernhard Eder
+	email = git@bbgen.net
+	signingkey = 0xC27C1B3F
+
+[alias]
+	co = checkout
+	br = branch
+	st = status
+	ci = commit
+	lg=log --graph --abbrev-commit --all --color --pretty=oneline --decorate=short
+
+#[diff]
+#	external = git_diff_wrapper
+#[pager]
+#	diff = 
