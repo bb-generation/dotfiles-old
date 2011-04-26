@@ -50,3 +50,7 @@ set tags=tags;/
 
 " make backspace work like everywhere else
 "set backspace=2
+
+" auto-check for vim comments
+set modeline
+
