@@ -10,6 +10,7 @@
 	st = status
 	ci = commit
 	lg=log --graph --abbrev-commit --all --color --pretty=oneline --decorate=short
+	lgg=log --graph --abbrev-commit --all --color --pretty=oneline --decorate
 
 #[diff]
 #	external = git_diff_wrapper
