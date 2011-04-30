@@ -26,6 +26,7 @@ if [ `hostname` == "dbbeee" ]; then
   alias a='acpi -b'
   alias start_redshift='redshift  -v -l 48.208957:16.374035'
 fi
+alias ggrep='grep -HnIir'
 
 
 #enable git and some other stuff.
