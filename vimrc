@@ -23,6 +23,7 @@ set ignorecase
 
 " <tab> completion should behave like on unix, not DOS
 set wildmenu
+set wildmode=longest:full
 
 " stop the annoying bell
 set visualbell
