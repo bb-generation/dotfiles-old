@@ -12,6 +12,9 @@ set shiftwidth=2
 " expanding tabs to whitespaces on by default
 "set expandtab
 
+set secure
+set exrc
+
 " show the matching bracket for the last {( and so on
 set showmatch
 
