@@ -59,7 +59,7 @@ set modeline
 set tags+=~/.vim/tags/cpp
 set tags+=~/.vim/tags/gtkmm
 
-map <C-F12> :!ctags -R --sort=yes --c++-kinds=+p --fields=+iaS --extra=+q .<CR>
+map <F12> :!ctags -R --sort=yes --c++-kinds=+p --fields=+iaS --extra=+q .<CR>
 
 " OmniCppComplete
 let OmniCpp_NamespaceSearch = 1
