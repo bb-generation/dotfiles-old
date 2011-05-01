@@ -12,8 +12,10 @@ set shiftwidth=2
 " expanding tabs to whitespaces on by default
 "set expandtab
 
-set secure
+" read .vimrc in the current directory
 set exrc
+" disable shell scripts in ./.vimrc
+set secure
 
 " show the matching bracket for the last {( and so on
 set showmatch
