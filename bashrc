@@ -28,6 +28,15 @@ if [ `hostname` == "dbbeee" ]; then
 fi
 alias ggrep='grep -HnIir'
 
+# make concurrent compiling
+if [ `hostname` == "bbx2s" ]; then
+	alias make='make -j 4'
+elif [ `hostname` == "dbbeee" ]; then
+	alias make='make -j 2'
+elif [ `hostname` == "dbbvirtual" ]; then
+	alias make='make -j 4'
+fi
+
 
 #enable git and some other stuff.
 export PS1='\[\033[01;32m\]\u\[\033[01;34m\] \w\[\033[31m\]$(__git_ps1 " (%s)")\[\033[01;34m\]$\[\033[00m\] '
