@@ -27,6 +27,8 @@ if [ `hostname` == "dbbeee" ]; then
   alias start_redshift='redshift  -v -l 48.208957:16.374035'
 fi
 alias ggrep='grep -HnIir'
+alias vim='vim -p'
+alias gvim='gvim -p'
 
 # make concurrent compiling
 if [ `hostname` == "bbx2s" ]; then
