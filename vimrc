@@ -83,3 +83,4 @@ set completeopt=menuone,menu,longest,preview
 " Mappings:
 map <F11> :set invlist<CR>
 
+set pastetoggle=<F2>
