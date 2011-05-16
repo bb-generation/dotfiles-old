@@ -29,6 +29,7 @@ fi
 alias ggrep='grep -HnIir'
 alias vim='vim -p'
 alias gvim='gvim -p'
+alias e='echo $?'
 
 # make concurrent compiling
 if [ `hostname` == "bbx2s" ]; then
