@@ -9,7 +9,9 @@
 	br = branch
 	st = status
 	ci = commit
+# pretty neat logging graph. Makes gitk kind of useless ;)
 	lg=log --graph --abbrev-commit --all --color --pretty=oneline --decorate=short
+# the same without decorate=short (to use with older git versions)
 	lgg=log --graph --abbrev-commit --all --color --pretty=oneline --decorate
 
 #[diff]
