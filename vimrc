@@ -93,3 +93,11 @@ map <F11> :set invlist<CR>
 " Use <F2> to switch to paste-mode (disables autoindent)
 set pastetoggle=<F2>
 
+" remember cursor position
+" thanks to https://github.com/mitsuhiko/dotfiles
+au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g`\"" | endif
+
+" prefer unix over windows over os9 formats
+" thanks to https://github.com/mitsuhiko/dotfiles/blob/master/vim/vimrc
+set fileformats=unix,dos,mac
+
