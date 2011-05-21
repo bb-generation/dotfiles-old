@@ -21,7 +21,12 @@
 # the same without decorate=short (to use with older git versions)
 	lgg=log --graph --abbrev-commit --all --color --pretty=oneline --decorate
 
+[push]
+# push matching branches by default
+	default = matching
+
 #[diff]
 #	external = git_diff_wrapper
 #[pager]
-#	diff = 
+#	diff =
+
