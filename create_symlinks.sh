@@ -11,6 +11,8 @@ ln -sf `pwd`/screenrc ~/.screenrc
 ln -sf `pwd`/vimrc ~/.vimrc
 ln -sf `pwd`/gitconfig ~/.gitconfig
 mkdir -p ~/.vim/
+mkdir -p ~/.vim/backup
+mkdir -p ~/.vim/undo
 ln -sf `pwd`/vim/after ~/.vim/after
 ln -sf `pwd`/vim/autoload ~/.vim/autoload
 ln -sf `pwd`/vim/doc ~/.vim/doc

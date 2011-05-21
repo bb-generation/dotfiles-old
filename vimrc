@@ -56,6 +56,7 @@ set mouse=a
 autocmd FileType make setlocal noexpandtab
 
 " enable filetype plugin
+filetype on
 filetype plugin indent on
 
 " enable ctags search recursively up the directories
@@ -66,6 +67,8 @@ set tags=tags;/
 
 " auto-check for vim comments
 set modeline
+" but only check the first/last 10 lines
+set modelines=10
 
 " tags:
 set tags+=~/.vim/tags/cpp
@@ -100,4 +103,36 @@ au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g
 " prefer unix over windows over os9 formats
 " thanks to https://github.com/mitsuhiko/dotfiles/blob/master/vim/vimrc
 set fileformats=unix,dos,mac
+
+" folding
+" fold on indent
+set foldmethod=indent
+" disable auto-fold
+set foldlevel=99
+
+" always wrap lines longer than the width of the terminal
+set wrap
+
+" global search by default
+set gdefault
+
+" Directories for swp files
+set backup
+set backupdir=~/.vim/backup
+set directory=~/.vim/backup
+
+" 'Edit anyway' if swap file exists
+" thanks to https://github.com/henrik/dotfiles/blob/master/vimrc
+au SwapExists * let v:swapchoice = 'e'
+
+" Unbreak 'crontab -e' with Vim:
+" http://drawohara.com/post/6344279/crontab-temp-file-must-be-edited-in-place
+au FileType crontab set nobackup nowritebackup
+
+" use persistent undo and save it to ~/.vim/undo
+" thanks to https://github.com/briancarper/dotfiles/blob/master/.vimrc
+if has('persistent_undo')
+	set undofile
+	execute "set undodir=" . "$HOME" . "/.vim" . "/undo"
+endif
 
