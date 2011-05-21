@@ -83,4 +83,6 @@ set completeopt=menuone,menu,longest,preview
 " Mappings:
 map <F11> :set invlist<CR>
 
+" Use <F2> to switch to paste-mode (disables autoindent)
 set pastetoggle=<F2>
+
