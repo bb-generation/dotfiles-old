@@ -6,15 +6,27 @@
 # beer in return Bernhard Eder
 # ----------------------------------------------------------------------------
 
-ln -sf `pwd`/bashrc ~/.bashrc
-ln -sf `pwd`/screenrc ~/.screenrc
-ln -sf `pwd`/vimrc ~/.vimrc
-ln -sf `pwd`/gitconfig ~/.gitconfig
-mkdir -p ~/.vim/
+if [ `uname -s` == "MINGW32_NT-6.1" ]; then
+	SYMLINK="cp -rf"
+else
+	SYMLINK="ln -sf"
+fi
+
+$SYMLINK `pwd`/bashrc ~/.bashrc
+$SYMLINK `pwd`/screenrc ~/.screenrc
+$SYMLINK `pwd`/vimrc ~/.vimrc
+$SYMLINK `pwd`/gitconfig ~/.gitconfig
+
+if [ `uname -s` == "MINGW32_NT-6.1" ]; then
+	rm -rf ~/.vim/
+	mkdir -p ~/.vim/
+fi
+
 mkdir -p ~/.vim/backup
 mkdir -p ~/.vim/undo
-ln -sf `pwd`/vim/after ~/.vim/after
-ln -sf `pwd`/vim/autoload ~/.vim/autoload
-ln -sf `pwd`/vim/doc ~/.vim/doc
-ln -sf `pwd`/vim/plugin ~/.vim/plugin
+
+$SYMLINK `pwd`/vim/after ~/.vim/after
+$SYMLINK `pwd`/vim/autoload ~/.vim/autoload
+$SYMLINK `pwd`/vim/doc ~/.vim/doc
+$SYMLINK `pwd`/vim/plugin ~/.vim/plugin
 
