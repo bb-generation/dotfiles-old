@@ -14,4 +14,5 @@
 "-                            Color scheme                                     -
 "-------------------------------------------------------------------------------
 
+color molokai " use molokai as default color scheme for gvim
 
