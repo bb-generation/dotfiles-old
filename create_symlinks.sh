@@ -29,4 +29,5 @@ $SYMLINK `pwd`/vim/after ~/.vim/after
 $SYMLINK `pwd`/vim/autoload ~/.vim/autoload
 $SYMLINK `pwd`/vim/doc ~/.vim/doc
 $SYMLINK `pwd`/vim/plugin ~/.vim/plugin
+$SYMLINK `pwd`/vim/bundle ~/.vim/bundle
 
