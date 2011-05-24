@@ -143,3 +143,22 @@ map <F11> :set invlist<CR>
 " create c++ tags file for current directory (recursive)
 map <F12> :!ctags -R --sort=yes --c++-kinds=+p --fields=+iaS --extra=+q .<CR>
 
+
+
+"-------------------------------------------------------------------------------
+"-                         Disable Arrow Keys                                  -
+"-------------------------------------------------------------------------------
+
+nnoremap <up> <nop>
+nnoremap <down> <nop>
+nnoremap <left> <nop>
+nnoremap <right> <nop>
+inoremap <up> <nop>
+inoremap <down> <nop>
+inoremap <left> <nop>
+inoremap <right> <nop>
+" j/k should move by display line, not file line
+nnoremap j gj         
+nnoremap k gk
+
+
