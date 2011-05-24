@@ -135,6 +135,12 @@ set completeopt=menuone,menu,longest,preview
 "-                             Mappings                                        -
 "-------------------------------------------------------------------------------
 
+" disable <F1>-Helpkey and map it to <ESC>
+inoremap <F1> <ESC>
+nnoremap <F1> <ESC>
+vnoremap <F1> <ESC>
+
+
 set pastetoggle=<F2> " Use <F2> to switch to paste-mode (disables autoindent)
 
 " toggle list (shows spaces, tabs, line endings, ...)
