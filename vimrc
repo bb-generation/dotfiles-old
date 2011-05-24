@@ -9,6 +9,10 @@
 "-                               .vimrc                                        -
 "-------------------------------------------------------------------------------
 
+filetype off                               " Filetype has to be off for pathogen
+call pathogen#runtime_append_all_bundles() " call pathogen plugin
+
+
 " Use vim default settings.
 " This has to be first because it changes how some other options work.
 set nocompatible
@@ -92,12 +96,6 @@ if has('persistent_undo')
 	set undofile
 	set undodir=~/.vim/undo
 endif
-
-"-------------------------------------------------------------------------------
-"-                                Pathogen plugin                              -
-"-------------------------------------------------------------------------------
-
-call pathogen#runtime_append_all_bundles()
 
 
 "-------------------------------------------------------------------------------
