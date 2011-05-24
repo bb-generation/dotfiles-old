@@ -16,3 +16,9 @@
 
 colorscheme desert " use desert as default color scheme for gvim
 
+set guioptions-=T    " disable Toolbar
+set guioptions-=l    " disable left scrollbar
+set guioptions-=L    " disable left scrollbar when window splitting
+set guioptions-=r    " disable right scrollbar
+set guioptions-=R    " disable right scrollbar when window splitting
+
