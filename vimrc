@@ -163,8 +163,4 @@ inoremap <up> <nop>
 inoremap <down> <nop>
 inoremap <left> <nop>
 inoremap <right> <nop>
-" j/k should move by display line, not file line
-nnoremap j gj         
-nnoremap k gk
-
 
