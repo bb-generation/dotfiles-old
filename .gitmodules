@@ -31,3 +31,9 @@
 [submodule "vim/bundle/desert256"]
 	path = vim/bundle/desert256
 	url = https://github.com/vim-scripts/desert256.vim.git
+[submodule "vim/bundle/wombat"]
+	path = vim/bundle/wombat
+	url = https://github.com/vim-scripts/Wombat.git
+[submodule "vim/bundle/wombat256"]
+	path = vim/bundle/wombat256
+	url = https://github.com/vim-scripts/wombat256.vim.git
