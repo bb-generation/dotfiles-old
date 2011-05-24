@@ -80,7 +80,7 @@ au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g
 set backup                             " use backup files
 set backupdir=~/.vim/backup            " directory to save backup files
 set directory=~/.vim/backup            " directory to save swap files
-au SwapExists * let v:swapchoice = 'e' " 'Edit anyway' if swap file exists
+" au SwapExists * let v:swapchoice = 'e' " 'Edit anyway' if swap file exists
 
 " Unbreak 'crontab -e' with Vim:
 " http://drawohara.com/post/6344279/crontab-temp-file-must-be-edited-in-place
