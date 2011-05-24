@@ -1,4 +1,11 @@
 # vim:set filetype=gitconfig:
+# ----------------------------------------------------------------------------
+# "THE MODIFIED BEER-WARE LICENSE"
+# <git@bbgen.net> wrote this file. You can do whatever you want with this stuff.
+# If we meet some day, and you think this stuff is worth it, you can buy me a
+# beer in return Bernhard Eder
+# ----------------------------------------------------------------------------
+
 [user]
 	name = Bernhard Eder
 	email = git@bbgen.net
@@ -9,10 +16,17 @@
 	br = branch
 	st = status
 	ci = commit
+# pretty neat logging graph. Makes gitk kind of useless ;)
 	lg=log --graph --abbrev-commit --all --color --pretty=oneline --decorate=short
+# the same without decorate=short (to use with older git versions)
 	lgg=log --graph --abbrev-commit --all --color --pretty=oneline --decorate
+
+[push]
+# push matching branches by default
+	default = matching
 
 #[diff]
 #	external = git_diff_wrapper
 #[pager]
-#	diff = 
+#	diff =
+
