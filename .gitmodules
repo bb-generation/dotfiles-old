@@ -19,3 +19,6 @@
 [submodule "vim/bundle/omnicppcomplete"]
 	path = vim/bundle/omnicppcomplete
 	url = https://github.com/vim-scripts/OmniCppComplete.git
+[submodule "vim/bundle/nerdtree"]
+	path = vim/bundle/nerdtree
+	url = https://github.com/scrooloose/nerdtree.git
