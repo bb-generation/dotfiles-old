@@ -14,5 +14,5 @@
 "-                            Color scheme                                     -
 "-------------------------------------------------------------------------------
 
-color desert " use desert as default color scheme for gvim
+colorscheme desert " use desert as default color scheme for gvim
 
