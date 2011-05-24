@@ -145,6 +145,10 @@ set completeopt=menuone,menu,longest,preview
 let mapleader = ","
 let maplocalleader = "\\"
 
+" leader mappings:
+
+map <leader><space> :noh<cr>
+
 " --- F1 - F4:  display stuff
 
 " disable <F1>-Helpkey and map it to <ESC>
