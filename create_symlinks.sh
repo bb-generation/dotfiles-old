@@ -8,8 +8,10 @@
 
 if [ `uname -s` == "MINGW32_NT-6.1" ]; then
 	SYMLINK="cp -rf"
+	DESTINATION=~/vimfiles/
 else
 	SYMLINK="ln -sf"
+	DESTINATION=~/.vim/
 fi
 
 $SYMLINK `pwd`/bashrc ~/.bashrc
@@ -26,9 +28,9 @@ fi
 mkdir -p ~/.vim/backup
 mkdir -p ~/.vim/undo
 
-$SYMLINK `pwd`/vim/after ~/.vim/after
-$SYMLINK `pwd`/vim/autoload ~/.vim/autoload
-$SYMLINK `pwd`/vim/doc ~/.vim/doc
-$SYMLINK `pwd`/vim/plugin ~/.vim/plugin
-$SYMLINK `pwd`/vim/bundle ~/.vim/bundle
+#$SYMLINK `pwd`/vim/after ~/.vim/after
+$SYMLINK `pwd`/vim/autoload $DESTINATION/autoload
+#$SYMLINK `pwd`/vim/doc ~/.vim/doc
+#$SYMLINK `pwd`/vim/plugin ~/.vim/plugin
+$SYMLINK `pwd`/vim/bundle $DESTINATION/bundle
 
