@@ -15,6 +15,7 @@ fi
 $SYMLINK `pwd`/bashrc ~/.bashrc
 $SYMLINK `pwd`/screenrc ~/.screenrc
 $SYMLINK `pwd`/vimrc ~/.vimrc
+$SYMLINK `pwd`/gvimrc ~/.gvimrc
 $SYMLINK `pwd`/gitconfig ~/.gitconfig
 
 if [ `uname -s` == "MINGW32_NT-6.1" ]; then
