@@ -34,12 +34,12 @@ set encoding=utf-8           " use UTF-8 as default encoding
 "-                               Editing settings                              -
 "-------------------------------------------------------------------------------
 
-set backspace=2           " make backspace work like everywhere else
-set wildmenu              " use enhanced tab completion
-set wildmode=longest:full " <tab> completion should behave like on unix, not DOS
-set mouse=a               " use terminal mouse stuff
-set wrap                  " always wrap lines longer than the width of the terminal
-set textwidth=80          " Wrap lines longer than 80 characters
+set backspace=indent,eol,start " make backspace work like everywhere else
+set wildmenu                   " use enhanced tab completion
+set wildmode=longest:full      " <tab> complete longest + list
+set mouse=a                    " use terminal mouse stuff
+set wrap                       " always wrap lines longer than the the terminal
+set textwidth=80               " Wrap lines longer than 80 characters
 
 
 "-------------------------------------------------------------------------------
