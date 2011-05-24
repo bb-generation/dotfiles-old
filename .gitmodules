@@ -10,3 +10,6 @@
 [submodule "vim/bundle/taglist"]
 	path = vim/bundle/taglist
 	url = https://github.com/vim-scripts/taglist.vim
+[submodule "vim/bundle/code_complete"]
+	path = vim/bundle/code_complete
+	url = https://github.com/vim-scripts/code_complete.git
