@@ -145,20 +145,32 @@ set completeopt=menuone,menu,longest,preview
 let mapleader = ","
 let maplocalleader = "\\"
 
+" --- F1 - F4:  display stuff
+
 " disable <F1>-Helpkey and map it to <ESC>
 inoremap <F1> <ESC>
 nnoremap <F1> <ESC>
 vnoremap <F1> <ESC>
 
 
-set pastetoggle=<F2> " Use <F2> to switch to paste-mode (disables autoindent)
+" --- F5 - F8:  editing stuff
+
+set pastetoggle=<F5> " switch to paste-mode (disables autoindent)
+
+
+" --- F9 - F12:  command/plugin stuff
+
+noremap <F9> :NERDTreeToggle<cr>
+inoremap <F9> <esc>:NerdTreeToggle<cr>
 
 " toggle list (shows spaces, tabs, line endings, ...)
-map <F11> :set invlist<CR>
+" map <F11> :set invlist<CR>
 
 " create c++ tags file for current directory (recursive)
-map <F12> :!ctags -R --sort=yes --c++-kinds=+p --fields=+iaS --extra=+q .<CR>
+cab cpptags !ctags -R --sort=yes --c++-kinds=+p --fields=+iaS --extra=+q .<CR>
 
+" sudo to write
+cmap w!! w !sudo tee % >/dev/null
 
 
 "-------------------------------------------------------------------------------
