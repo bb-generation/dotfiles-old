@@ -134,6 +134,10 @@ set completeopt=menuone,menu,longest,preview
 "-                             Mappings                                        -
 "-------------------------------------------------------------------------------
 
+" set leader for personal mappings
+let mapleader = ","
+let maplocalleader = "\\"
+
 " disable <F1>-Helpkey and map it to <ESC>
 inoremap <F1> <ESC>
 nnoremap <F1> <ESC>
