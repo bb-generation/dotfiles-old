@@ -26,6 +26,7 @@ set secure                   " disable shell scripts in ./.vimrc
 set visualbell               " stop the annoying bell
 set fileformats=unix,dos,mac " prefer unix over windows over os9 formats
 set encoding=utf-8           " use UTF-8 as default encoding
+set modelines=0							 " disable vim modelines parser
 let g:secure_modelines=10    " use secure modelines parser and let it parse the
                              " first/last 10 lines.
 
@@ -189,4 +190,21 @@ inoremap <up> <nop>
 inoremap <down> <nop>
 inoremap <left> <nop>
 inoremap <right> <nop>
+
+
+
+"-------------------------------------------------------------------------------
+"-                         Filetype specific settings                          -
+"-------------------------------------------------------------------------------
+
+
+
+
+"-------------------------------------------------------------------------------
+"-                            GIT                                              -
+"-------------------------------------------------------------------------------
+
+" disable modelines in git
+au Filetype gitrebase let g:secure_modelines_modelines=0
+au Filetype gitcommit let g:secure_modelines_modelines=0
 
