@@ -6,12 +6,14 @@
 # beer in return Bernhard Eder
 # ----------------------------------------------------------------------------
 
-if [ `uname -s` == "MINGW32_NT-6.1" ]; then
-	SYMLINK="cp -rf"
+if [[ `uname -s` == MINGW32_* ]]; then
+	SYMLINK="cp -rfu"
 	DESTINATION=~/vimfiles/
+	echo Using Windows configuration
 else
 	SYMLINK="ln -sf"
 	DESTINATION=~/.vim/
+	echo Using Linux configuration
 fi
 
 $SYMLINK `pwd`/bashrc ~/.bashrc
