@@ -24,10 +24,10 @@ set nocompatible
 set exrc                     " read .vimrc in the current directory
 set secure                   " disable shell scripts in ./.vimrc
 set visualbell               " stop the annoying bell
-set modeline                 " auto-check for vim comments in the file)
-set modelines=10             " but only check the first/last 10 lines
 set fileformats=unix,dos,mac " prefer unix over windows over os9 formats
 set encoding=utf-8           " use UTF-8 as default encoding
+let g:secure_modelines=10    " use secure modelines parser and let it parse the
+                             " first/last 10 lines.
 
 
 "-------------------------------------------------------------------------------
