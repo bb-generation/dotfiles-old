@@ -35,7 +35,7 @@ let g:secure_modelines=10    " use secure modelines parser and let it parse the
 "-                              Colorscheme                                    -
 "-------------------------------------------------------------------------------
 
-colorscheme evening
+colorscheme wombat
 
 
 "-------------------------------------------------------------------------------
