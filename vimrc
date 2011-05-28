@@ -77,6 +77,7 @@ set foldlevel=99      " disable auto-fold
 "-------------------------------------------------------------------------------
 
 set ignorecase " ignore case by default
+set smartcase  " don't ignore case when using at least one upper case letter
 set hlsearch   " highlight search expressions (disable it temp with :noh)
 set incsearch  " show the next match while entering a search
 set gdefault   " global search by default
