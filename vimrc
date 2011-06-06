@@ -179,6 +179,7 @@ inoremap <F9> <esc>:NerdTreeToggle<cr>
 
 " create c++ tags file for current directory (recursive)
 cab cpptags !ctags -R --sort=yes --c++-kinds=+p --fields=+iaS --extra=+q .<CR>
+cab javatags !ctags -R --language-force=java .<CR>
 
 " sudo to write
 cmap w!! w !sudo tee % >/dev/null
