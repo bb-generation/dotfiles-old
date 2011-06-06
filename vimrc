@@ -143,6 +143,11 @@ set completeopt=menuone,menu,longest,preview
 "-                             Mappings                                        -
 "-------------------------------------------------------------------------------
 
+set timeoutlen=350 " be fast when using mappings
+
+" use jj to leave insert mode
+inoremap jj <ESC>
+
 " set leader for personal mappings
 let mapleader = ","
 let maplocalleader = "\\"
