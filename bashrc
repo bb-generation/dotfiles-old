@@ -44,6 +44,8 @@ if [ `hostname` == "dbbeee" ]; then
   alias start_redshift='redshift  -v -l 48.208957:16.374035'
 fi
 
+# use grep coloring
+alias grep='grep --color=auto'
 # grep alias to search for something
 ## -H: print the filename
 ## -n: print the line number
