@@ -44,6 +44,9 @@ if [ `hostname` == "dbbeee" ]; then
   alias start_redshift='redshift  -v -l 48.208957:16.374035'
 fi
 
+
+# grep coloring!
+alias grep='grep --color=auto'
 # grep alias to search for something
 ## -H: print the filename
 ## -n: print the line number
@@ -66,6 +69,10 @@ elif [ `hostname` == "dbbeee" ]; then
 	alias make='make -j 2'
 elif [ `hostname` == "dbbvirtual" ]; then
 	alias make='make -j 4'
+fi
+
+if [ `uname` == "Linux" ]; then
+	export JAVA_HOME=$(readlink -f /usr/bin/java | sed "s:bin/java::")
 fi
 
 
